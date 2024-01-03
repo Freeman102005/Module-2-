@@ -2,14 +2,23 @@
 <html>
   <head>
     <title>youtube.com clone</title>
-    <style>
-      .email{
+    <style type="text/css">
+      .email {
        padding-top: 8px;
        padding-bottom: 6px;
        align-items: center;
+      }
     </style>
   </head>
   <body>
-   <input>
+    <input   class="email" id="email_input" type="text"  placeholder="Type in your email">    <button onclick="showEmail()"> Show Email</button>   
+     <script type="text/javascript">        
+          function showEmail(){
+            const inputValue = document.getElementById("email_input");
+            document.write(`<h1 style="color:red !important; font-size:1.8rem; text-align:center;"> ${inputValue.value} </h1>`);
+            const inputValue = document.querySelector('email_input'). value;
+          }    
+     </script>
   </body>
-</html>
+  
+  </html>
